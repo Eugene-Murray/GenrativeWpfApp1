@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="700" Width="700">
     <Grid>
-        <!--<Canvas Name="ArtCanvas" Background="orange"/>
+        <Canvas Name="ArtCanvas" Background="orange" Margin="0,0,0,340"/>
 
-        <Canvas x:Name="LSystemCanvas" Loaded="OnCanvasLoaded"/>-->
+        <!--<Canvas x:Name="LSystemCanvas" Loaded="OnCanvasLoaded"/>-->
 
         <Canvas x:Name="FractalCanvas" Loaded="OnFractalCanvasLoaded"/>
     </Grid>

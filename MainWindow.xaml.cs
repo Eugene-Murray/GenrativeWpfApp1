@@ -22,29 +22,29 @@ namespace GenrativeWpfApp1
         {
             InitializeComponent();
 
-            //GenerateArt();
+            GenerateArt();
         }
 
-        //private void GenerateArt()
-        //{
-        //    for (int i = 0; i < 100; i++)
-        //    {
-        //        Ellipse ellipse = new Ellipse
-        //        {
-        //            Width = _random.Next(10, 100),
-        //            Height = _random.Next(10, 100),
-        //            Fill = new SolidColorBrush(Color.FromRgb(
-        //                (byte)_random.Next(256),
-        //                (byte)_random.Next(256),
-        //                (byte)_random.Next(256)))
-        //        };
+        private void GenerateArt()
+        {
+            for (int i = 0; i < 2; i++)
+            {
+                Ellipse ellipse = new Ellipse
+                {
+                    Width = _random.Next(10, 100),
+                    Height = _random.Next(10, 100),
+                    Fill = new SolidColorBrush(Color.FromRgb(
+                        (byte)_random.Next(256),
+                        (byte)_random.Next(256),
+                        (byte)_random.Next(256)))
+                };
 
-        //        Canvas.SetLeft(ellipse, _random.Next((int)ArtCanvas.ActualWidth));
-        //        Canvas.SetTop(ellipse, _random.Next((int)ArtCanvas.ActualHeight));
+                Canvas.SetLeft(ellipse, _random.Next((int)ArtCanvas.ActualWidth));
+                Canvas.SetTop(ellipse, _random.Next((int)ArtCanvas.ActualHeight));
 
-        //        ArtCanvas.Children.Add(ellipse);
-        //    }
-        //}
+                ArtCanvas.Children.Add(ellipse);
+            }
+        }
 
         //private void OnCanvasLoaded(object sender, RoutedEventArgs e)
         //{
